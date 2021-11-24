@@ -8,8 +8,10 @@ public class Slot {
     public void parkVehicle(Vehicle vehicle){
         this.vehicle=vehicle;
     }
-    public void unParkVehicle(){
+    public Vehicle unParkVehicle(){
+        Vehicle vehicle1=vehicle;
         this.vehicle=null;
+        return vehicle1;
     }
 
     public boolean isEmpty(){
