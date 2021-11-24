@@ -38,6 +38,15 @@ public class ParkingLot {
         return parkingStrategy.parkVehicle(vehicle, parkingLot);
     }
 
+    public String unParkVehicle(String ticketId,ParkingLot parkingLot){
+        try {
+            return parkingStrategy.unParkVehicle(ticketId,parkingLot);
+        }
+        catch (Exception e){
+            return "Invalid ticket";
+        }
+    }
+
     private ParkingStrategy getParkingLotStrategyFor(String vehicleType) {
         switch (vehicleType){
             case "CAR":
