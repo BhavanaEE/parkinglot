@@ -20,7 +20,7 @@ public class InputHandler {
 
     public void inputFromConsole(ParkingLot parkingLot) {
         while (true) {
-            System.out.println("\n1.park_vehicle \n2.unPark_vehicle \n3.display_free_count \n4.display_free_slots \n5.display_occupied_slots \n6.exit");
+            System.out.println("\n1.park_vehicle \n2.unPark_vehicle \n3.display \n4.exit");
             int choice = sc.nextInt();
             switch (choice) {
                 case 1:
